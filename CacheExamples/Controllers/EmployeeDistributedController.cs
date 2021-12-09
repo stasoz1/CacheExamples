@@ -10,12 +10,12 @@ namespace CacheExamples.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class EmployeeController : ControllerBase
+    public class EmployeeDistributedController : ControllerBase
     {
         private readonly IDistributedCache _distributedCache;
         private readonly string employeesCollectionKey = "employeesCollectionKey";
 
-        public EmployeeController(IDistributedCache distributedCache)
+        public EmployeeDistributedController(IDistributedCache distributedCache)
         {
             _distributedCache = distributedCache;
         }

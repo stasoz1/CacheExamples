@@ -17,7 +17,8 @@ namespace CacheExamples
 
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDistributedMemoryCache(); // Add distributed memory cache dependencies 
+            services.AddMemoryCache(); // uncomment this line and comment 21 line if you want to use MemoryCache
+           // services.AddDistributedMemoryCache(); // Add distributed memory cache dependencies 
             services.AddControllers();
         }
 
